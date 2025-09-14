@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>{{ site.name }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+  <p class="lead">{{ site.description }}</p>
+  <p>
+    <a class="btn" href="/projects.html">View Projects</a>
+    <a class="btn btn-outline" href="/contact.html">Contact</a>
+  </p>
+</section>
+
+<section class="cards">
+  <h2>Featured projects</h2>
+  <div class="grid">
+    {% for p in projects[:3] %}
+    <article class="card">
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.desc }}</p>
+      <p><a href="{{ p.link }}">Learn more →</a></p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

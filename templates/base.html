@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.name }} — {{ site.tagline }}</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/index.html">{{ site.name }}</a>
+      <button id="menu-btn" class="menu-btn" aria-label="Menu">☰</button>
+      <nav id="nav">
+        <a href="/index.html">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ site.name }} · {{ site.location }} · <a href="{{ site.github }}">GitHub</a> · <a href="{{ site.linkedin }}">LinkedIn</a></p>
+    </div>
+  </footer>
+  <script src="static/js/main.js"></script>
+</body>
+</html>

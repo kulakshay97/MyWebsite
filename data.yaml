@@ -1,0 +1,16 @@
+site:
+  name: "Akshay Kulkarni"
+  tagline: "RPA & Agentic AI Engineer · Automation · Developer"
+  description: "I build automation solutions with UiPath and AI-driven agents. Portfolio includes Document Understanding, Inventory Agents, and more."
+  email: "akshay@example.com"
+  github: "https://github.com/yourusername"
+  linkedin: "https://www.linkedin.com/in/yourprofile"
+  twitter: "https://twitter.com/yourhandle"
+  location: "India"
+projects:
+  - title: "Inventory Reconciliation Agent"
+    desc: "UiPath agent for reconciling inventory between ARC reports and internal records."
+    link: "#"
+  - title: "Document Understanding POC"
+    desc: "Automated DU pipeline for invoices and forms."
+    link: "#"
